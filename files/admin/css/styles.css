@@ -1,0 +1,218 @@
+/**
+*  _     _   __________   ___________    ________        __________  ___    ___   _________ 
+* | |   | | |  ______  | |____   ____| |  ______  |     |  _______| |   \  /   | | ________|
+* | |___| | | |      | |      | |      | |______| |     | |         | |\ \/ /| | | |_______     
+* |  ___  | | |      | |      | |      |  ______  |     | |         | | \_/  | | |_______  |
+* | |   | | | |______| |      | |      | |      | |     | |_______  | |      | |  _______| |
+* |_|   |_| |__________|      |_|      |_|      |_|     |_________| |_|      |_| |_________|
+*
+* WolfEco Public License v1.0
+*
+* The software of WolfEco team can be released of 3 types - full public, mixed public, closed.
+*
+* HOTA CMS - it's a mixed public sofware
+* WolfEco team can close a part of code from public access (or make obfuscation of this part)  at own discretion.
+* You are not allowed to access the closed part of the code, nor modify it.
+*
+* @author WoflEco team
+* @link http://wolfeco.ru/page/cms
+*
+* /files/admin/css/styles.css - Main styles of admin panel
+* -Last update: 08.06.2018
+* 
+*
+* List of css
+* 1. Basic
+* 2. Navigation
+* 3. Login
+* 4. Content block
+* 5. Bootstrap fixs
+*  - 5.1 Checkbox
+*
+* ================ 1. Basic ================
+*/                                          
+html{
+  position: relative;
+  min-height: 100%;
+}
+body{
+	background-color: rgb(238,238,238);
+  margin-bottom: 60px;
+}
+.wrapper{
+  background-color: rgb(248,248,248);
+  max-width: 1024px;
+  margin: auto;
+  margin-top: 0px;
+}
+footer{
+  background-color: white;
+  margin-top: 10px;
+  width: 100%;
+  color: rgb(119,119,119);
+  position: absolute;
+  bottom: 0;
+}
+a, button{
+  transition: 0.5s;
+}
+/*
+* ================ 2. Navigation ================
+*/   
+.header{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0px;
+  background-color: white;
+}
+.nav-width{
+	max-width: 1024px;
+	text-align: left;
+}
+.navbar{
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 0;
+  border: none;
+}
+.nav-fix{
+  background-color: white;
+}
+footer > nav > div > .text-right{
+  padding-top: 20px;
+}
+/*
+* ================ 3. Login ================
+*/  
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin{
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="login"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/*
+* ================ 4. Content block ================
+*/  
+.adm-block{
+  padding: 5px;
+  transition: 0.5s;
+  color: rgb(51,51,51);
+  text-align: center;
+}
+.adm-block:hover{
+  background-color: rgb(240,240,240); 
+  box-shadow: 0 0 15px rgba(200, 200, 200, 0.8);
+}
+.adm-main-block{
+  border-top: none;
+  background-color: white;
+}
+.adm{
+  background-color: rgb(238,238,238);
+  margin-top: 100px;
+}
+@media (max-width:320px){
+  .adm-block{
+    padding: 0;
+  }
+}
+.template{
+  float: left;
+  display: inline-block;
+  max-width: 200px;
+}
+.template-area-button{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+/*
+* ================ 5. Bootstrap fixs ================
+*/  
+.panel-fix, .input-fix, .cat, .file{
+  border: none;
+  box-shadow: none;
+}
+.panel-fix{
+  border-radius: 10px;
+}
+.table-thr-fix{border-top-right-radius: 10px;}
+.table-thl-fix{border-top-left-radius: 10px;}
+.panel-heading{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.input-fix, .ql-editor{
+  border-left: 1px solid rgb(200, 200, 200);
+  border-radius: 0;
+}
+.btn{
+  border: none;
+}
+.al{
+  position: fixed;
+  left: 10px;
+  bottom: 0px;
+  z-index: 1051;
+}
+/*
+* ================ 5.1 Bootstrap fixs - Checkbox ================
+*/  
+.checkbox {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+}
+.checkbox + label {
+  cursor: pointer;
+  z-index: 1;
+  color: rgb(80, 80, 80);
+  margin: 5px;
+}
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.checkbox:checked + label:before {
+  background: #9FD468;
+}
+.checkbox:checked + label{
+  color: #9FD468;
+}
+
+
+.install-area{
+  margin-top: 10px;
+}

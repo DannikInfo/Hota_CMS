@@ -1,0 +1,20 @@
+{
+	"Name": "news",
+	"Creator": "WolfEco",
+	"Version": "1.0",
+	"IconType": "font",
+	"Icon": "fa-newspaper-o",
+	"Enable": false,
+	"Files": {		
+		"AdmHandler": "admin.php",
+		"SiteHandler": "site.php",
+		"Settings": "settings.php",
+		"Tags": "tags.php",
+		"Content": "content.php",
+		"TemplateFiles":[
+			"modules/news/archive.tpl",
+			"modules/news/full-news.tpl",
+			"modules/news/news.tpl"
+		]
+	}
+}

@@ -1,0 +1,4 @@
+<FilesMatch "\.(htm|html|tpl)\.?">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
