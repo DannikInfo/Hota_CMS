@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteRule ^page/(.*)$ ?page=$1 [L]
+RewriteRule ^page/(.*)/(.*)$ ?page=$1 [L]
+RewriteRule ^news/(.*) ?news=$1 [L]
+RewriteRule ^install /files/admin/pages/install.php [L]
+
+ErrorDocument 404 /index.php?error_type=404
+ErrorDocument 403 /index.php?error_type=403
+
+RewriteRule ^admin/(.*)$ admin.php?page=$1  [L]
